@@ -1,0 +1,14 @@
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemClassLibrary\obj\Debug\net7.0\MedicalSystemClassLibrary.csproj.AssemblyReference.cache
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemClassLibrary\obj\Debug\net7.0\MedicalSystemClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemClassLibrary\obj\Debug\net7.0\MedicalSystemClassLibrary.AssemblyInfoInputs.cache
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemClassLibrary\obj\Debug\net7.0\MedicalSystemClassLibrary.AssemblyInfo.cs
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemClassLibrary\obj\Debug\net7.0\MedicalSystemClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemClassLibrary\bin\Debug\net7.0\MedicalSystemClassLibrary.deps.json
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemClassLibrary\bin\Debug\net7.0\MedicalSystemClassLibrary.runtimeconfig.json
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemClassLibrary\bin\Debug\net7.0\MedicalSystemClassLibrary.dll
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemClassLibrary\bin\Debug\net7.0\MedicalSystemClassLibrary.pdb
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemClassLibrary\obj\Debug\net7.0\MedicalSystemClassLibrary.dll
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemClassLibrary\obj\Debug\net7.0\refint\MedicalSystemClassLibrary.dll
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemClassLibrary\obj\Debug\net7.0\MedicalSystemClassLibrary.pdb
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemClassLibrary\obj\Debug\net7.0\MedicalSystemClassLibrary.genruntimeconfig.cache
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemClassLibrary\obj\Debug\net7.0\ref\MedicalSystemClassLibrary.dll

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicalSystemClassLibrary", "MedicalSystemClassLibrary\MedicalSystemClassLibrary.csproj", "{393A63C1-B56F-4C4B-8493-77E0511AE03F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicalSystemWebAPI", "MedicalSystemWebAPI\MedicalSystemWebAPI.csproj", "{BA84C883-504F-464C-93BA-A1ED1E7FFDEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{393A63C1-B56F-4C4B-8493-77E0511AE03F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{393A63C1-B56F-4C4B-8493-77E0511AE03F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{393A63C1-B56F-4C4B-8493-77E0511AE03F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{393A63C1-B56F-4C4B-8493-77E0511AE03F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA84C883-504F-464C-93BA-A1ED1E7FFDEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA84C883-504F-464C-93BA-A1ED1E7FFDEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA84C883-504F-464C-93BA-A1ED1E7FFDEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA84C883-504F-464C-93BA-A1ED1E7FFDEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89E9A346-E583-48E4-95D9-04A389BA06F9}
+	EndGlobalSection
+EndGlobal
