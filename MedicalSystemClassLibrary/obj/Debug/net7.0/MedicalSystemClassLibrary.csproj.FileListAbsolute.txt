@@ -12,3 +12,4 @@ C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemClassLibrary\obj\D
 C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemClassLibrary\obj\Debug\net7.0\MedicalSystemClassLibrary.pdb
 C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemClassLibrary\obj\Debug\net7.0\MedicalSystemClassLibrary.genruntimeconfig.cache
 C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemClassLibrary\obj\Debug\net7.0\ref\MedicalSystemClassLibrary.dll
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemClassLibrary\obj\Debug\net7.0\MedicalSystemClassLibrary.sourcelink.json
