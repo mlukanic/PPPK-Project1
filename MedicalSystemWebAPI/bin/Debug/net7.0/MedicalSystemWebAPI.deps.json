@@ -16,6 +16,17 @@
           "MedicalSystemWebAPI.dll": {}
         }
       },
+      "Castle.Core/5.1.0": {
+        "dependencies": {
+          "System.Diagnostics.EventLog": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Castle.Core.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.1.0.0"
+          }
+        }
+      },
       "Microsoft.AspNetCore.OpenApi/7.0.18": {
         "dependencies": {
           "Microsoft.OpenApi": "1.4.3"
@@ -51,6 +62,18 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/7.0.0": {},
+      "Microsoft.EntityFrameworkCore.Proxies/7.0.0": {
+        "dependencies": {
+          "Castle.Core": "5.1.0",
+          "Microsoft.EntityFrameworkCore": "7.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Proxies.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51807"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/7.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.0",
@@ -177,9 +200,11 @@
           }
         }
       },
+      "System.Diagnostics.EventLog/6.0.0": {},
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
       "MedicalSystemClassLibrary/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.Proxies": "7.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.0"
         },
         "runtime": {
@@ -196,6 +221,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Castle.Core/5.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-31UJpTHOiWq95CDOHazE3Ub/hE/PydNWsJMwnEVTqFFP4WhAugwpaVGxzOxKgNeSUUeqS2W6lxV+q7u1pAOfXg==",
+      "path": "castle.core/5.1.0",
+      "hashPath": "castle.core.5.1.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.OpenApi/7.0.18": {
       "type": "package",
@@ -224,6 +256,13 @@
       "sha512": "sha512-Qkd2H+jLe37o5ku+LjT6qf7kAHY75Yfn2bBDQgqr13DTOLYpEy1Mt93KPFjaZvIu/srEcbfGGMRL7urKm5zN8Q==",
       "path": "microsoft.entityframeworkcore.analyzers/7.0.0",
       "hashPath": "microsoft.entityframeworkcore.analyzers.7.0.0.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Proxies/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kyW50VblVb1Xs4mp0KTSc5lHeVGBfFCH54AqjfB4fD/Ulc7MJv3qGmvhT7zNJfjJ4L9bKHGTJQIlUm1qS7r9Vw==",
+      "path": "microsoft.entityframeworkcore.proxies/7.0.0",
+      "hashPath": "microsoft.entityframeworkcore.proxies.7.0.0.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/7.0.0": {
       "type": "package",
@@ -350,6 +389,13 @@
       "sha512": "sha512-OvbvxX+wL8skxTBttcBsVxdh73Fag4xwqEU2edh4JMn7Ws/xJHnY/JB1e9RoCb6XpDxUF3hD9A0Z1lEUx40Pfw==",
       "path": "swashbuckle.aspnetcore.swaggerui/6.5.0",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+    },
+    "System.Diagnostics.EventLog/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lcyUiXTsETK2ALsZrX+nWuHSIQeazhqPphLfaRxzdGaG93+0kELqpgEHtwWOlQe7+jSFnKwaCAgL4kjeZCQJnw==",
+      "path": "system.diagnostics.eventlog/6.0.0",
+      "hashPath": "system.diagnostics.eventlog.6.0.0.nupkg.sha512"
     },
     "System.Runtime.CompilerServices.Unsafe/6.0.0": {
       "type": "package",

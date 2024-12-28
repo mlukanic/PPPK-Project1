@@ -38,3 +38,6 @@ C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemWebAPI\obj\Debug\n
 C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemWebAPI\obj\Debug\net7.0\MedicalSystemWebAPI.genruntimeconfig.cache
 C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemWebAPI\obj\Debug\net7.0\ref\MedicalSystemWebAPI.dll
 C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemWebAPI\obj\Debug\net7.0\MedicalSystemWebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemWebAPI\bin\Debug\net7.0\Castle.Core.dll
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemWebAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemWebAPI\obj\Debug\net7.0\MedicalSystemWebAPI.sourcelink.json

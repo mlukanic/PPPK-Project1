@@ -54,10 +54,5 @@ namespace MedicalSystemClassLibrary.Data
                 .WithMany(p => p.Prescriptions)
                 .HasForeignKey(p => p.PatientId);
         }
-
-        public void ResetPatientIdSequence()
-        {
-            this.Database.ExecuteSqlRaw("ALTER SEQUENCE patients_id_seq RESTART WITH 1;");
-        }
     }
 }
