@@ -4,7 +4,6 @@ using MedicalSystemClassLibrary.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using MedicalSystemClassLibrary.Factories;
-using MedicalSystemClassLibrary.Services;
 using MedicalSystemClassLibrary.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,7 +21,6 @@ builder.Services.AddScoped<IRepositoryFactory, RepositoryFactory>();
 // Register services
 builder.Services.AddScoped<PatientService>();
 
-builder.Services.AddScoped<DbMaintenanceService>();
 
 // Add controllers
 builder.Services.AddControllers();
