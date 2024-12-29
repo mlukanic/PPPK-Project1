@@ -158,6 +158,68 @@ namespace MedicalSystemClassLibrary.Migrations
                     b.ToTable("Prescriptions");
                 });
 
+            modelBuilder.Entity("MedicalSystemClassLibrary.Models.Role", b =>
+                {
+                    b.Property<int>("RoleId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("RoleId"));
+
+                    b.Property<string>("RoleName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("RoleId");
+
+                    b.ToTable("Roles");
+                });
+
+            modelBuilder.Entity("MedicalSystemClassLibrary.Models.User", b =>
+                {
+                    b.Property<int>("UserId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("UserId"));
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Phone")
+                        .HasColumnType("text");
+
+                    b.Property<string>("PwdHash")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("PwdSalt")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("RoleId")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("UserId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("Users");
+                });
+
             modelBuilder.Entity("MedicalSystemClassLibrary.Models.Examination", b =>
                 {
                     b.HasOne("MedicalSystemClassLibrary.Models.Patient", "Patient")
@@ -202,6 +264,17 @@ namespace MedicalSystemClassLibrary.Migrations
                     b.Navigation("Patient");
                 });
 
+            modelBuilder.Entity("MedicalSystemClassLibrary.Models.User", b =>
+                {
+                    b.HasOne("MedicalSystemClassLibrary.Models.Role", "Role")
+                        .WithMany("Users")
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Role");
+                });
+
             modelBuilder.Entity("MedicalSystemClassLibrary.Models.Examination", b =>
                 {
                     b.Navigation("MedicalFiles");
@@ -214,6 +287,11 @@ namespace MedicalSystemClassLibrary.Migrations
                     b.Navigation("MedicalRecords");
 
                     b.Navigation("Prescriptions");
+                });
+
+            modelBuilder.Entity("MedicalSystemClassLibrary.Models.Role", b =>
+                {
+                    b.Navigation("Users");
                 });
 #pragma warning restore 612, 618
         }
