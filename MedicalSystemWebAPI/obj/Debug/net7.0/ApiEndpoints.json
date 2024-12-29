@@ -18,14 +18,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "patient",
-        "Type": "MedicalSystemClassLibrary.Models.Patient",
+        "Name": "patientDto",
+        "Type": "MedicalSystemWebAPI.Dtos.PatientDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "MedicalSystemClassLibrary.Models.Patient",
+        "Type": "MedicalSystemWebAPI.Dtos.PatientDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -61,7 +61,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[MedicalSystemClassLibrary.Models.Patient, MedicalSystemClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MedicalSystemWebAPI.Dtos.PatientDto, MedicalSystemWebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -87,7 +87,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "MedicalSystemClassLibrary.Models.Patient",
+        "Type": "MedicalSystemWebAPI.Dtos.PatientDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -111,12 +111,116 @@
         "IsRequired": true
       },
       {
-        "Name": "patient",
-        "Type": "MedicalSystemClassLibrary.Models.Patient",
+        "Name": "patientDto",
+        "Type": "MedicalSystemWebAPI.Dtos.PatientDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalSystemWebAPI.Controllers.UserController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/User/ChangePassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userChangePasswordDto",
+        "Type": "MedicalSystemWebAPI.Dtos.UserChangePasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MedicalSystemWebAPI.Dtos.UserChangePasswordDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalSystemWebAPI.Controllers.UserController",
+    "Method": "GetToken",
+    "RelativePath": "api/User/GetToken",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalSystemWebAPI.Controllers.UserController",
+    "Method": "Login",
+    "RelativePath": "api/User/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userDto",
+        "Type": "MedicalSystemWebAPI.Dtos.UserLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalSystemWebAPI.Controllers.UserController",
+    "Method": "PromoteUser",
+    "RelativePath": "api/User/PromoteUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userPromoteDto",
+        "Type": "MedicalSystemWebAPI.Dtos.UserPromoteDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MedicalSystemWebAPI.Dtos.UserDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalSystemWebAPI.Controllers.UserController",
+    "Method": "Register",
+    "RelativePath": "api/User/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userDto",
+        "Type": "MedicalSystemWebAPI.Dtos.UserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MedicalSystemWebAPI.Dtos.UserDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "MedicalSystemWebAPI.Controllers.WeatherForecastController",

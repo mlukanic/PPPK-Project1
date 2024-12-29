@@ -7,28 +7,40 @@
       "RelativeMoniker": "D:0:0:{BA84C883-504F-464C-93BA-A1ED1E7FFDEE}|MedicalSystemWebAPI\\MedicalSystemWebAPI.csproj|solutionrelative:medicalsystemwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemclasslibrary\\data\\medicalsystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|solutionrelative:medicalsystemclasslibrary\\data\\medicalsystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BA84C883-504F-464C-93BA-A1ED1E7FFDEE}|MedicalSystemWebAPI\\MedicalSystemWebAPI.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemwebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BA84C883-504F-464C-93BA-A1ED1E7FFDEE}|MedicalSystemWebAPI\\MedicalSystemWebAPI.csproj|solutionrelative:medicalsystemwebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA84C883-504F-464C-93BA-A1ED1E7FFDEE}|MedicalSystemWebAPI\\MedicalSystemWebAPI.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemwebapi\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA84C883-504F-464C-93BA-A1ED1E7FFDEE}|MedicalSystemWebAPI\\MedicalSystemWebAPI.csproj|solutionrelative:medicalsystemwebapi\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BA84C883-504F-464C-93BA-A1ED1E7FFDEE}|MedicalSystemWebAPI\\MedicalSystemWebAPI.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemwebapi\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA84C883-504F-464C-93BA-A1ED1E7FFDEE}|MedicalSystemWebAPI\\MedicalSystemWebAPI.csproj|solutionrelative:medicalsystemwebapi\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemclasslibrary\\utilities\\oibvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|solutionrelative:medicalsystemclasslibrary\\utilities\\oibvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BA84C883-504F-464C-93BA-A1ED1E7FFDEE}|MedicalSystemWebAPI\\MedicalSystemWebAPI.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemwebapi\\dtos\\patientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA84C883-504F-464C-93BA-A1ED1E7FFDEE}|MedicalSystemWebAPI\\MedicalSystemWebAPI.csproj|solutionrelative:medicalsystemwebapi\\dtos\\patientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemclasslibrary\\models\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|solutionrelative:medicalsystemclasslibrary\\models\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BA84C883-504F-464C-93BA-A1ED1E7FFDEE}|MedicalSystemWebAPI\\MedicalSystemWebAPI.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemwebapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA84C883-504F-464C-93BA-A1ED1E7FFDEE}|MedicalSystemWebAPI\\MedicalSystemWebAPI.csproj|solutionrelative:medicalsystemwebapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemclasslibrary\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|solutionrelative:medicalsystemclasslibrary\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemclasslibrary\\models\\medicalrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|solutionrelative:medicalsystemclasslibrary\\models\\medicalrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemclasslibrary\\data\\medicalsystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|solutionrelative:medicalsystemclasslibrary\\data\\medicalsystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemclasslibrary\\utilities\\passwordhashprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|solutionrelative:medicalsystemclasslibrary\\utilities\\passwordhashprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemclasslibrary\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|solutionrelative:medicalsystemclasslibrary\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemclasslibrary\\models\\examination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,6 +49,34 @@
     {
       "AbsoluteMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemclasslibrary\\models\\medicalfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|solutionrelative:medicalsystemclasslibrary\\models\\medicalfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemclasslibrary\\models\\medicalrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|solutionrelative:medicalsystemclasslibrary\\models\\medicalrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemclasslibrary\\models\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|solutionrelative:medicalsystemclasslibrary\\models\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemclasslibrary\\services\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|solutionrelative:medicalsystemclasslibrary\\services\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemclasslibrary\\factories\\repositoryfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|solutionrelative:medicalsystemclasslibrary\\factories\\repositoryfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemclasslibrary\\factories\\irepositoryfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|solutionrelative:medicalsystemclasslibrary\\factories\\irepositoryfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemclasslibrary\\enums\\examinationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|solutionrelative:medicalsystemclasslibrary\\enums\\examinationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemclasslibrary\\utilities\\oibvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|solutionrelative:medicalsystemclasslibrary\\utilities\\oibvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemclasslibrary\\migrations\\20241228140145_revertedname.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -61,10 +101,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemclasslibrary\\migrations\\20241228132146_initialcreate.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|solutionrelative:medicalsystemclasslibrary\\migrations\\20241228132146_initialcreate.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemclasslibrary\\factories\\irepositoryfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|solutionrelative:medicalsystemclasslibrary\\factories\\irepositoryfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,35 +110,141 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemWebAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "MedicalSystemWebAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemWebAPI\\appsettings.json",
+              "RelativeToolTip": "MedicalSystemWebAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-29T10:31:58.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemWebAPI\\Mapping\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "MedicalSystemWebAPI\\Mapping\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemWebAPI\\Mapping\\MappingProfile.cs",
+              "RelativeToolTip": "MedicalSystemWebAPI\\Mapping\\MappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T10:26:08.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemWebAPI\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "MedicalSystemWebAPI\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemWebAPI\\Controllers\\UserController.cs",
+              "RelativeToolTip": "MedicalSystemWebAPI\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T10:23:16.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PatientDto.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemWebAPI\\Dtos\\PatientDto.cs",
+              "RelativeDocumentMoniker": "MedicalSystemWebAPI\\Dtos\\PatientDto.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemWebAPI\\Dtos\\PatientDto.cs",
+              "RelativeToolTip": "MedicalSystemWebAPI\\Dtos\\PatientDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T10:22:00.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "PatientController.cs",
               "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemWebAPI\\Controllers\\PatientController.cs",
               "RelativeDocumentMoniker": "MedicalSystemWebAPI\\Controllers\\PatientController.cs",
               "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemWebAPI\\Controllers\\PatientController.cs",
               "RelativeToolTip": "MedicalSystemWebAPI\\Controllers\\PatientController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAwwEQAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwHkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T16:04:01.783Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OibValidator.cs",
-              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Utilities\\OibValidator.cs",
-              "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Utilities\\OibValidator.cs",
-              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Utilities\\OibValidator.cs",
-              "RelativeToolTip": "MedicalSystemClassLibrary\\Utilities\\OibValidator.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T16:02:20.523Z"
+              "WhenOpened": "2024-12-28T16:04:01.783Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Models\\Patient.cs",
+              "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Models\\Patient.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Models\\Patient.cs",
+              "RelativeToolTip": "MedicalSystemClassLibrary\\Models\\Patient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T15:35:12.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PasswordHashProvider.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Utilities\\PasswordHashProvider.cs",
+              "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Utilities\\PasswordHashProvider.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Utilities\\PasswordHashProvider.cs",
+              "RelativeToolTip": "MedicalSystemClassLibrary\\Utilities\\PasswordHashProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T10:18:18.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Models\\Role.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Models\\Role.cs",
+              "RelativeToolTip": "MedicalSystemClassLibrary\\Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T10:11:32.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MedicalFile.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Models\\MedicalFile.cs",
+              "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Models\\MedicalFile.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Models\\MedicalFile.cs",
+              "RelativeToolTip": "MedicalSystemClassLibrary\\Models\\MedicalFile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T15:35:41.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemWebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "MedicalSystemWebAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemWebAPI\\Program.cs",
+              "RelativeToolTip": "MedicalSystemWebAPI\\Program.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAEIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T13:57:27.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "MedicalRecord.cs",
               "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Models\\MedicalRecord.cs",
               "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Models\\MedicalRecord.cs",
@@ -110,11 +252,12 @@
               "RelativeToolTip": "MedicalSystemClassLibrary\\Models\\MedicalRecord.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T15:35:40.308Z"
+              "WhenOpened": "2024-12-28T15:35:40.308Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "Prescription.cs",
               "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Models\\Prescription.cs",
               "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Models\\Prescription.cs",
@@ -122,35 +265,25 @@
               "RelativeToolTip": "MedicalSystemClassLibrary\\Models\\Prescription.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T15:35:24.47Z"
+              "WhenOpened": "2024-12-28T15:35:24.47Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Patient.cs",
-              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Models\\Patient.cs",
-              "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Models\\Patient.cs",
-              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Models\\Patient.cs",
-              "RelativeToolTip": "MedicalSystemClassLibrary\\Models\\Patient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "MedicalSystemDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Data\\MedicalSystemDbContext.cs",
+              "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Data\\MedicalSystemDbContext.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Data\\MedicalSystemDbContext.cs",
+              "RelativeToolTip": "MedicalSystemClassLibrary\\Data\\MedicalSystemDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T15:35:12.769Z"
+              "WhenOpened": "2024-12-28T13:58:24.124Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MedicalSystemDbContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Migrations\\MedicalSystemDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Migrations\\MedicalSystemDbContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Migrations\\MedicalSystemDbContextModelSnapshot.cs",
-              "RelativeToolTip": "MedicalSystemClassLibrary\\Migrations\\MedicalSystemDbContextModelSnapshot.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T14:11:46.527Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 21,
               "Title": "PatientRepository.cs",
               "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Repositories\\PatientRepository.cs",
               "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Repositories\\PatientRepository.cs",
@@ -162,7 +295,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 22,
+              "Title": "MedicalSystemDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Migrations\\MedicalSystemDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Migrations\\MedicalSystemDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Migrations\\MedicalSystemDbContextModelSnapshot.cs",
+              "RelativeToolTip": "MedicalSystemClassLibrary\\Migrations\\MedicalSystemDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T14:11:46.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ExaminationType.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Enums\\ExaminationType.cs",
+              "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Enums\\ExaminationType.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Enums\\ExaminationType.cs",
+              "RelativeToolTip": "MedicalSystemClassLibrary\\Enums\\ExaminationType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T09:37:36.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Examination.cs",
               "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Models\\Examination.cs",
               "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Models\\Examination.cs",
@@ -170,49 +327,60 @@
               "RelativeToolTip": "MedicalSystemClassLibrary\\Models\\Examination.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T15:35:51.525Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemWebAPI\\Program.cs",
-              "RelativeDocumentMoniker": "MedicalSystemWebAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemWebAPI\\Program.cs",
-              "RelativeToolTip": "MedicalSystemWebAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T13:57:27.252Z",
+              "WhenOpened": "2024-12-28T15:35:51.525Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MedicalSystemDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Data\\MedicalSystemDbContext.cs",
-              "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Data\\MedicalSystemDbContext.cs",
-              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Data\\MedicalSystemDbContext.cs",
-              "RelativeToolTip": "MedicalSystemClassLibrary\\Data\\MedicalSystemDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAVAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "RepositoryFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Factories\\RepositoryFactory.cs",
+              "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Factories\\RepositoryFactory.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Factories\\RepositoryFactory.cs",
+              "RelativeToolTip": "MedicalSystemClassLibrary\\Factories\\RepositoryFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T13:58:24.124Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-29T10:01:49.041Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MedicalFile.cs",
-              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Models\\MedicalFile.cs",
-              "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Models\\MedicalFile.cs",
-              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Models\\MedicalFile.cs",
-              "RelativeToolTip": "MedicalSystemClassLibrary\\Models\\MedicalFile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "PatientService.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Services\\PatientService.cs",
+              "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Services\\PatientService.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Services\\PatientService.cs",
+              "RelativeToolTip": "MedicalSystemClassLibrary\\Services\\PatientService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T15:35:41.63Z"
+              "WhenOpened": "2024-12-29T10:02:03.36Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
+              "Title": "OibValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Utilities\\OibValidator.cs",
+              "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Utilities\\OibValidator.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Utilities\\OibValidator.cs",
+              "RelativeToolTip": "MedicalSystemClassLibrary\\Utilities\\OibValidator.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T16:02:20.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IRepositoryFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Factories\\IRepositoryFactory.cs",
+              "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Factories\\IRepositoryFactory.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Factories\\IRepositoryFactory.cs",
+              "RelativeToolTip": "MedicalSystemClassLibrary\\Factories\\IRepositoryFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T14:14:02.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "HealthController.cs",
               "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemWebAPI\\Controllers\\HealthController.cs",
               "RelativeDocumentMoniker": "MedicalSystemWebAPI\\Controllers\\HealthController.cs",
@@ -224,7 +392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 19,
               "Title": "20241228140145_RevertedName.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Migrations\\20241228140145_RevertedName.Designer.cs",
               "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Migrations\\20241228140145_RevertedName.Designer.cs",
@@ -236,7 +404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 23,
               "Title": "20241228135457_FixedDbName.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Migrations\\20241228135457_FixedDbName.Designer.cs",
               "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Migrations\\20241228135457_FixedDbName.Designer.cs",
@@ -248,7 +416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 24,
               "Title": "20241228132146_InitialCreate.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Migrations\\20241228132146_InitialCreate.Designer.cs",
               "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Migrations\\20241228132146_InitialCreate.Designer.cs",
@@ -257,18 +425,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-28T14:10:34.761Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IRepositoryFactory.cs",
-              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Factories\\IRepositoryFactory.cs",
-              "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Factories\\IRepositoryFactory.cs",
-              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Factories\\IRepositoryFactory.cs",
-              "RelativeToolTip": "MedicalSystemClassLibrary\\Factories\\IRepositoryFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T14:14:02.708Z"
             }
           ]
         },

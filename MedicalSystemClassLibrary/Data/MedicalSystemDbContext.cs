@@ -17,6 +17,8 @@ namespace MedicalSystemClassLibrary.Data
             Database=medicinski_sustav
         ";
 
+        public DbSet<User> Users { get; set; }
+        public DbSet<Role> Roles { get; set; }
         public DbSet<Patient> Patients { get; set; }
         public DbSet<MedicalRecord> MedicalRecords { get; set; }
         public DbSet<Examination> Examinations { get; set; }
@@ -53,6 +55,11 @@ namespace MedicalSystemClassLibrary.Data
                 .HasOne(p => p.Patient)
                 .WithMany(p => p.Prescriptions)
                 .HasForeignKey(p => p.PatientId);
+
+            modelBuilder.Entity<User>()
+                .HasOne(u => u.Role)
+                .WithMany(r => r.Users)
+                .HasForeignKey(u => u.RoleId);
         }
     }
 }
