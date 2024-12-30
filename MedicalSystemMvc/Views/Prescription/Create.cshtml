@@ -1,0 +1,24 @@
+﻿@model MedicalSystemMvc.Models.PrescriptionViewModel
+
+<h2>Create Prescription</h2>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="Medication" class="control-label"></label>
+        <input asp-for="Medication" class="form-control" />
+        <span asp-validation-for="Medication" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Dosage" class="control-label"></label>
+        <input asp-for="Dosage" class="form-control" />
+        <span asp-validation-for="Dosage" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PatientId" class="control-label"></label>
+        <input asp-for="PatientId" class="form-control" />
+        <span asp-validation-for="PatientId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>
