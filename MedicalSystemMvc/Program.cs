@@ -1,5 +1,6 @@
 using MedicalSystemClassLibrary.Data;
 using MedicalSystemClassLibrary.Models;
+using MedicalSystemMvc.Controllers;
 using MedicalSystemMvc.Mapping;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
@@ -15,7 +16,7 @@ builder.Services.AddDbContext<MedicalSystemDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("Postgre")));
 
 builder.Services.AddDistributedMemoryCache();
-
+builder.Services.AddTransient<FileUploadController>();
 builder.Services.AddSession(options =>
 {
     options.IdleTimeout = TimeSpan.FromMinutes(10);

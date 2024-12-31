@@ -7,16 +7,19 @@ using System.Linq;
 using MedicalSystemClassLibrary.Models;
 using Microsoft.AspNetCore.Http;
 using System.IO;
+using System.Collections.Generic;
 
 namespace MedicalSystemMvc.Controllers
 {
     public class MedicalFileController : Controller
     {
         private readonly MedicalSystemDbContext _context;
+        private readonly FileUploadController _fileUploadController;
 
-        public MedicalFileController(MedicalSystemDbContext context)
+        public MedicalFileController(MedicalSystemDbContext context, FileUploadController fileUploadController)
         {
             _context = context;
+            _fileUploadController = fileUploadController;
         }
 
         // GET: MedicalFile
@@ -58,52 +61,59 @@ namespace MedicalSystemMvc.Controllers
             return View(medicalFile);
         }
 
-        // GET: MedicalFile/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: MedicalFile/Create
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ExaminationId")] MedicalFileViewModel medicalFile, IFormFile file)
+        [Route("MedicalFile/UploadFile")]
+        public async Task<IActionResult> UploadFile(List<IFormFile> files)
         {
-            if (ModelState.IsValid)
-            {
-                if (file != null && file.Length > 0)
-                {
-                    var resourcesFolder = Path.Combine(Directory.GetCurrentDirectory(), "resources");
-                    if (!Directory.Exists(resourcesFolder))
-                    {
-                        Directory.CreateDirectory(resourcesFolder);
-                    }
+            var size = files.Sum(f => f.Length);
 
-                    var filePath = Path.Combine(resourcesFolder, file.FileName);
+            var filePaths = new List<string>();
+            foreach (var formFile in files)
+            {
+                if (formFile.Length > 0)
+                {
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "Resources\\Files", formFile.FileName);
+                    filePaths.Add(filePath);
 
                     using (var stream = new FileStream(filePath, FileMode.Create))
                     {
-                        await file.CopyToAsync(stream);
+                        await formFile.CopyToAsync(stream);
                     }
-
-                    var newMedicalFile = new MedicalFile
-                    {
-                        FilePath = filePath,
-                        ExaminationId = medicalFile.ExaminationId
-                    };
-
-                    _context.Add(newMedicalFile);
-                    await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Index));
                 }
-                else
+            }
+
+            return Json(new { count = files.Count, size, filePaths });
+        }
+
+        public IActionResult Create(string filePath)
+        {
+            var model = new MedicalFileViewModel();
+            if (!string.IsNullOrEmpty(filePath))
+            {
+                model.FilePath = filePath;
+            }
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("ExaminationId,FilePath")] MedicalFileViewModel medicalFile)
+        {
+            if (ModelState.IsValid)
+            {
+                var newMedicalFile = new MedicalFile
                 {
-                    ModelState.AddModelError(string.Empty, "Please upload a file.");
-                }
+                    FilePath = medicalFile.FilePath,
+                    ExaminationId = medicalFile.ExaminationId
+                };
+
+                _context.Add(newMedicalFile);
+                await _context.SaveChangesAsync();
+
+                return RedirectToAction(nameof(Index));
             }
             return View(medicalFile);
         }
-
 
         // GET: MedicalFile/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -126,13 +136,14 @@ namespace MedicalSystemMvc.Controllers
             {
                 return NotFound();
             }
+
             return View(medicalFile);
         }
 
         // POST: MedicalFile/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,ExaminationId")] MedicalFileViewModel medicalFile, IFormFile file)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,ExaminationId,FilePath")] MedicalFileViewModel medicalFile)
         {
             if (id != medicalFile.Id)
             {
@@ -143,22 +154,21 @@ namespace MedicalSystemMvc.Controllers
             {
                 try
                 {
-                    var updatedMedicalFile = await _context.MedicalFiles.FindAsync(id);
-                    if (file != null && file.Length > 0)
+                    var existingMedicalFile = await _context.MedicalFiles.FindAsync(id);
+                    if (existingMedicalFile == null)
                     {
-                        var filePath = Path.Combine("wwwroot/uploads", file.FileName);
-
-                        using (var stream = new FileStream(filePath, FileMode.Create))
-                        {
-                            await file.CopyToAsync(stream);
-                        }
-
-                        updatedMedicalFile.FilePath = filePath;
+                        return NotFound();
                     }
 
-                    updatedMedicalFile.ExaminationId = medicalFile.ExaminationId;
+                    // Update the file path if a new file was uploaded
+                    if (!string.IsNullOrEmpty(medicalFile.FilePath))
+                    {
+                        existingMedicalFile.FilePath = medicalFile.FilePath;
+                    }
 
-                    _context.Update(updatedMedicalFile);
+                    existingMedicalFile.ExaminationId = medicalFile.ExaminationId;
+
+                    _context.Update(existingMedicalFile);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -203,9 +213,9 @@ namespace MedicalSystemMvc.Controllers
         }
 
         // POST: MedicalFile/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> Delete(int id)
         {
             var medicalFile = await _context.MedicalFiles.FindAsync(id);
             if (medicalFile != null)
@@ -219,13 +229,6 @@ namespace MedicalSystemMvc.Controllers
         private bool MedicalFileExists(int id)
         {
             return _context.MedicalFiles.Any(e => e.Id == id);
-        }
-
-        public IActionResult Download(string filePath)
-        {
-            var fileBytes = System.IO.File.ReadAllBytes(filePath);
-            var fileName = Path.GetFileName(filePath);
-            return File(fileBytes, "application/octet-stream", fileName);
         }
     }
 }

@@ -1,28 +1,29 @@
-﻿@model MedicalSystemMvc.Models.MedicalFileViewModel
+﻿@model MedicalFileViewModel
 
 @{
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<h2>Edit</h2>
 
-<h4>MedicalFileViewModel</h4>
+<h4>MedicalFile</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Edit" enctype="multipart/form-data">
-            <input type="hidden" asp-for="Id" />
+        <form asp-action="Edit" id="uploadForm" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label asp-for="ExaminationId" class="control-label"></label>
                 <input asp-for="ExaminationId" class="form-control" />
                 <span asp-validation-for="ExaminationId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label for="file" class="control-label">File</label>
-                <input type="file" name="file" class="form-control" />
+                <label for="fileUpload" class="control-label">Upload New File</label>
+                <input type="file" id="fileUpload" name="files" class="form-control" />
             </div>
+            <input type="hidden" asp-for="Id" />
+            <input type="hidden" id="filePath" name="FilePath" asp-for="FilePath" />
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn btn-primary" onclick="uploadAndEdit(event)" />
             </div>
         </form>
     </div>
@@ -33,7 +34,32 @@
 </div>
 
 @section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
+    <script>
+        function uploadAndEdit(event) {
+            event.preventDefault();
+            var formData = new FormData(document.getElementById('uploadForm'));
+            fetch('/MedicalFile/UploadFile', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.filePaths && data.filePaths.length > 0) {
+                        document.getElementById('filePath').value = data.filePaths[0];
+                        document.getElementById('uploadForm').submit();
+                    } else {
+                        alert('File upload failed.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('File upload failed.');
+                });
+        }
+    </script>
 }

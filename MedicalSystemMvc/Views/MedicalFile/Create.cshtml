@@ -1,38 +1,58 @@
-﻿@model MedicalSystemMvc.Models.MedicalFileViewModel
+﻿@model MedicalFileViewModel
 
-@{
-    ViewData["Title"] = "Create";
-}
-
-<h1>Create</h1>
-
-<h4>MedicalFileViewModel</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create" enctype="multipart/form-data">
-            <div class="form-group">
-                <label asp-for="ExaminationId" class="control-label"></label>
-                <input asp-for="ExaminationId" class="form-control" />
-                <span asp-validation-for="ExaminationId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label for="file" class="control-label">File</label>
-                <input type="file" name="file" class="form-control" />
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+<!-- Form for Uploading the File -->
+<form id="uploadForm" method="post" enctype="multipart/form-data" asp-controller="MedicalFile" asp-action="UploadFile">
+    <div class="form-group">
+        <div class="col-md-10">
+            <p>Upload file</p>
+            <input type="file" id="fileInput" name="files" multiple />
+        </div>
     </div>
-</div>
+</form>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+<!-- Form for Creating the Medical File -->
+<form id="createForm" method="post" asp-controller="MedicalFile" asp-action="Create">
+    <div class="form-group">
+        <label asp-for="ExaminationId" class="control-label"></label>
+        <input asp-for="ExaminationId" class="form-control" />
+        <span asp-validation-for="ExaminationId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="hidden" asp-for="FilePath" id="filePath" />
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            <input type="button" value="Create" class="btn btn-primary" onclick="uploadAndCreate()" />
+        </div>
+    </div>
+</form>
 
 @section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
+    <script>
+        function uploadAndCreate() {
+            var formData = new FormData(document.getElementById('uploadForm'));
+            fetch('/MedicalFile/UploadFile', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.filePaths && data.filePaths.length > 0) {
+                        document.getElementById('filePath').value = data.filePaths[0];
+                        document.getElementById('createForm').submit();
+                    } else {
+                        alert('File upload failed.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('File upload failed.');
+                });
+        }
+    </script>
 }
