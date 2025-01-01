@@ -44,7 +44,10 @@
 </div>
 
 <div>
-    <h4>Medical Record</h4>
+    <h4>
+        Medical Record
+        <a asp-action="Create" asp-controller="MedicalRecord" asp-route-patientId="@Model.Id" class="btn btn-primary">Add Medical Record</a>
+    </h4>
     <hr />
     <ul>
         @foreach (var medicalRecord in Model.MedicalRecords)
@@ -55,7 +58,10 @@
 </div>
 
 <div>
-    <h4>Prescriptions</h4>
+    <h4>
+        Prescriptions
+        <a asp-action="Create" asp-controller="Prescription" asp-route-patientId="@Model.Id" class="btn btn-primary">Add Prescription</a>
+    </h4>
     <hr />
     <ul>
         @foreach (var prescription in Model.Prescriptions)
@@ -63,10 +69,14 @@
             <li>@prescription.Medication - @prescription.Dosage</li>
         }
     </ul>
+
 </div>
 
 <div>
-    <h4>Examinations</h4>
+    <h4>
+        Examinations
+        <a asp-action="Create" asp-controller="Examination" asp-route-patientId="@Model.Id" class="btn btn-primary">Add Examination</a>
+    </h4>
     <hr />
     <ul>
         @foreach (var examination in Model.Examinations)
@@ -77,6 +87,6 @@
 </div>
 
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a> |
+    <a asp-action="ExportToCsv" asp-route-id="@Model.Id" class="btn btn-success">Export as CSV</a>
 </div>

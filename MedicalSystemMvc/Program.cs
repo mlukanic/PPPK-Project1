@@ -17,6 +17,7 @@ builder.Services.AddDbContext<MedicalSystemDbContext>(options =>
 
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddTransient<FileUploadController>();
+builder.Services.AddTransient<CsvExporter>();
 builder.Services.AddSession(options =>
 {
     options.IdleTimeout = TimeSpan.FromMinutes(10);

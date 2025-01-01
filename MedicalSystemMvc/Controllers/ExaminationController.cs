@@ -46,10 +46,15 @@ namespace MedicalSystemMvc.Controllers
         }
 
         // GET: Examination/Create
-        public IActionResult Create()
+        public IActionResult Create(int? patientId)
         {
+            var viewModel = new ExaminationViewModel();
+            if (patientId.HasValue)
+            {
+                viewModel.PatientId = patientId.Value;
+            }
             ViewBag.ExaminationTypes = ExaminationTypeDict.Descriptions;
-            return View();
+            return View(viewModel);
         }
 
         // POST: Examination/Create
@@ -174,6 +179,11 @@ namespace MedicalSystemMvc.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var examination = await _context.Examinations.FindAsync(id);
+            if (examination == null)
+            {
+                return NotFound();
+            }
+
             _context.Examinations.Remove(examination);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));

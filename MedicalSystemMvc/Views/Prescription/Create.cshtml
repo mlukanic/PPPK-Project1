@@ -1,24 +1,39 @@
 ﻿@model MedicalSystemMvc.Models.PrescriptionViewModel
 
-<h2>Create Prescription</h2>
+@{
+    ViewData["Title"] = "Create Prescription";
+}
 
-<form asp-action="Create">
-    <div class="form-group">
-        <label asp-for="Medication" class="control-label"></label>
-        <input asp-for="Medication" class="form-control" />
-        <span asp-validation-for="Medication" class="text-danger"></span>
+<h1>Create Prescription</h1>
+
+<h4>Prescription</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="PatientId" class="control-label"></label>
+                <input asp-for="PatientId" class="form-control" />
+                <span asp-validation-for="PatientId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Medication" class="control-label"></label>
+                <input asp-for="Medication" class="form-control" />
+                <span asp-validation-for="Medication" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dosage" class="control-label"></label>
+                <input asp-for="Dosage" class="form-control" />
+                <span asp-validation-for="Dosage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
     </div>
-    <div class="form-group">
-        <label asp-for="Dosage" class="control-label"></label>
-        <input asp-for="Dosage" class="form-control" />
-        <span asp-validation-for="Dosage" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="PatientId" class="control-label"></label>
-        <input asp-for="PatientId" class="form-control" />
-        <span asp-validation-for="PatientId" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <input type="submit" value="Create" class="btn btn-primary" />
-    </div>
-</form>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
