@@ -21,34 +21,36 @@ namespace MedicalSystemMvc.Controllers
         public async Task<IActionResult> Index()
         {
             var medicalRecords = await _context.MedicalRecords
-                .Select(mr => new MedicalRecordViewModel
+                .Select(m => new MedicalRecordViewModel
                 {
-                    Id = mr.Id,
-                    DiseaseName = mr.DiseaseName,
-                    StartDate = mr.StartDate,
-                    EndDate = mr.EndDate,
-                    PatientId = mr.PatientId
+                    Id = m.Id,
+                    DiseaseName = m.DiseaseName,
+                    StartDate = m.StartDate,
+                    EndDate = m.EndDate,
+                    PatientId = m.PatientId
                 })
                 .ToListAsync();
-
             return View(medicalRecords);
         }
 
         // GET: MedicalRecord/Details/5
-        public async Task<IActionResult> Details(int id)
+        public async Task<IActionResult> Details(int? id)
         {
-            var medicalRecord = await _context.MedicalRecords
-                .Where(mr => mr.Id == id)
-                .Select(mr => new MedicalRecordViewModel
-                {
-                    Id = mr.Id,
-                    DiseaseName = mr.DiseaseName,
-                    StartDate = mr.StartDate,
-                    EndDate = mr.EndDate,
-                    PatientId = mr.PatientId
-                })
-                .FirstOrDefaultAsync();
+            if (id == null)
+            {
+                return NotFound();
+            }
 
+            var medicalRecord = await _context.MedicalRecords
+                .Select(m => new MedicalRecordViewModel
+                {
+                    Id = m.Id,
+                    DiseaseName = m.DiseaseName,
+                    StartDate = m.StartDate,
+                    EndDate = m.EndDate,
+                    PatientId = m.PatientId
+                })
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (medicalRecord == null)
             {
                 return NotFound();
@@ -73,8 +75,8 @@ namespace MedicalSystemMvc.Controllers
                 var medicalRecord = new MedicalRecord
                 {
                     DiseaseName = model.DiseaseName,
-                    StartDate = DateTime.SpecifyKind(model.StartDate, DateTimeKind.Utc),
-                    EndDate = model.EndDate.HasValue ? DateTime.SpecifyKind(model.EndDate.Value, DateTimeKind.Utc) : (DateTime?)null,
+                    StartDate = model.StartDate,
+                    EndDate = model.EndDate,
                     PatientId = model.PatientId
                 };
 
@@ -86,8 +88,13 @@ namespace MedicalSystemMvc.Controllers
         }
 
         // GET: MedicalRecord/Edit/5
-        public async Task<IActionResult> Edit(int id)
+        public async Task<IActionResult> Edit(int? id)
         {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
             var medicalRecord = await _context.MedicalRecords.FindAsync(id);
             if (medicalRecord == null)
             {
@@ -118,39 +125,56 @@ namespace MedicalSystemMvc.Controllers
 
             if (ModelState.IsValid)
             {
-                var medicalRecord = await _context.MedicalRecords.FindAsync(id);
-                if (medicalRecord == null)
+                try
                 {
-                    return NotFound();
+                    var medicalRecord = await _context.MedicalRecords.FindAsync(id);
+                    if (medicalRecord == null)
+                    {
+                        return NotFound();
+                    }
+
+                    medicalRecord.DiseaseName = model.DiseaseName;
+                    medicalRecord.StartDate = model.StartDate;
+                    medicalRecord.EndDate = model.EndDate;
+                    medicalRecord.PatientId = model.PatientId;
+
+                    _context.Update(medicalRecord);
+                    await _context.SaveChangesAsync();
                 }
-
-                medicalRecord.DiseaseName = model.DiseaseName;
-                medicalRecord.StartDate = DateTime.SpecifyKind(model.StartDate, DateTimeKind.Utc);
-                medicalRecord.EndDate = model.EndDate.HasValue ? DateTime.SpecifyKind(model.EndDate.Value, DateTimeKind.Utc) : (DateTime?)null;
-                medicalRecord.PatientId = model.PatientId;
-
-                _context.Update(medicalRecord);
-                await _context.SaveChangesAsync();
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!MedicalRecordExists(model.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
                 return RedirectToAction(nameof(Index));
             }
             return View(model);
         }
 
         // GET: MedicalRecord/Delete/5
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(int? id)
         {
-            var medicalRecord = await _context.MedicalRecords
-                .Where(mr => mr.Id == id)
-                .Select(mr => new MedicalRecordViewModel
-                {
-                    Id = mr.Id,
-                    DiseaseName = mr.DiseaseName,
-                    StartDate = mr.StartDate,
-                    EndDate = mr.EndDate,
-                    PatientId = mr.PatientId
-                })
-                .FirstOrDefaultAsync();
+            if (id == null)
+            {
+                return NotFound();
+            }
 
+            var medicalRecord = await _context.MedicalRecords
+                .Select(m => new MedicalRecordViewModel
+                {
+                    Id = m.Id,
+                    DiseaseName = m.DiseaseName,
+                    StartDate = m.StartDate,
+                    EndDate = m.EndDate,
+                    PatientId = m.PatientId
+                })
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (medicalRecord == null)
             {
                 return NotFound();
@@ -173,6 +197,11 @@ namespace MedicalSystemMvc.Controllers
             _context.MedicalRecords.Remove(medicalRecord);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
+        }
+
+        private bool MedicalRecordExists(int id)
+        {
+            return _context.MedicalRecords.Any(e => e.Id == id);
         }
     }
 }
