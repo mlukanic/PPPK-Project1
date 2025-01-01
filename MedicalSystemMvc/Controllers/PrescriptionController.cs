@@ -56,30 +56,34 @@ namespace MedicalSystemMvc.Controllers
         }
 
         // GET: Prescription/Create
-        public IActionResult Create()
+        public IActionResult Create(int? patientId)
         {
-            return View();
+            var viewModel = new PrescriptionViewModel();
+            if (patientId.HasValue)
+            {
+                viewModel.PatientId = patientId.Value;
+            }
+            return View(viewModel);
         }
 
         // POST: Prescription/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(PrescriptionViewModel model)
+        public async Task<IActionResult> Create(PrescriptionViewModel viewModel)
         {
             if (ModelState.IsValid)
             {
                 var prescription = new Prescription
                 {
-                    Medication = model.Medication,
-                    Dosage = model.Dosage,
-                    PatientId = model.PatientId
+                    PatientId = viewModel.PatientId,
+                    Medication = viewModel.Medication,
+                    Dosage = viewModel.Dosage
                 };
-
                 _context.Add(prescription);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(model);
+            return View(viewModel);
         }
 
         // GET: Prescription/Edit/5

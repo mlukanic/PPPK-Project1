@@ -13,16 +13,29 @@ namespace MedicalSystemMvc.Controllers
     public class PatientController : Controller
     {
         private readonly MedicalSystemDbContext _context;
+        private readonly CsvExporter _csvExporter;
 
-        public PatientController(MedicalSystemDbContext context)
+        public PatientController(MedicalSystemDbContext context, CsvExporter csvExporter)
         {
             _context = context;
+            _csvExporter = csvExporter;
         }
 
         // GET: Patient
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            var patients = await _context.Patients
+            ViewData["CurrentFilter"] = searchString;
+
+            IQueryable<Patient> patients = _context.Patients;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                patients = patients.Where(p => p.LastName.Contains(searchString) || p.OIB.Contains(searchString));
+            }
+
+            var patientList = await patients.ToListAsync();
+
+            var patientViewModels = patientList
                 .Select(p => new PatientViewModel
                 {
                     Id = p.Id,
@@ -31,9 +44,9 @@ namespace MedicalSystemMvc.Controllers
                     OIB = p.OIB,
                     DateOfBirth = p.DateOfBirth,
                     Gender = p.Gender
-                }).ToListAsync();
+                }).ToList();
 
-            return View(patients);
+            return View(patientViewModels);
         }
 
         public IActionResult Details(int id)
@@ -225,6 +238,24 @@ namespace MedicalSystemMvc.Controllers
         private bool PatientExists(int id)
         {
             return _context.Patients.Any(e => e.Id == id);
+        }
+
+        public async Task<IActionResult> ExportToCsv(int id)
+        {
+            var patient = await _context.Patients
+                .Include(p => p.MedicalRecords)
+                .Include(p => p.Examinations)
+                .Include(p => p.Prescriptions)
+                .FirstOrDefaultAsync(p => p.Id == id);
+
+            if (patient == null)
+            {
+                return NotFound();
+            }
+
+            var csv = _csvExporter.ExportPatientsToCsv(new List<Patient> { patient });
+            var bytes = System.Text.Encoding.UTF8.GetBytes(csv);
+            return File(bytes, "text/csv", $"PatientDetails-{patient.OIB}.csv");
         }
     }
 }
