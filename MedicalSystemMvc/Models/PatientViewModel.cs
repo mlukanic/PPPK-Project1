@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using MedicalSystemClassLibrary.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace MedicalSystemMvc.Models
 {
@@ -20,5 +21,11 @@ namespace MedicalSystemMvc.Models
 
         [Required(ErrorMessage = "Gender is required")]
         public string Gender { get; set; }
+
+        public ICollection<MedicalRecordViewModel> MedicalRecords { get; set; } = new List<MedicalRecordViewModel>();
+
+        public ICollection<PrescriptionViewModel> Prescriptions { get; set; } = new List<PrescriptionViewModel>();
+
+        public ICollection<ExaminationViewModel> Examinations { get; set; } = new List<ExaminationViewModel>();
     }
 }

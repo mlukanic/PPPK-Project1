@@ -3,7 +3,7 @@
     bool loggedIn = false;
     string username = "";
     string userRole = "";
-    bool hideNavbar = ViewData["HideNavbar"] != null && (bool)ViewData["HideNavbar"]; // Check if the flag is set
+    bool hideNavbar = ViewData["HideNavbar"] != null && (bool)ViewData["HideNavbar"];
 
     if (user != null && !string.IsNullOrEmpty(user.Identity?.Name))
     {
@@ -47,7 +47,19 @@
                         else
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Logout">Logout</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Patient" asp-action="Index">Patients</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Examination" asp-action="Index">Examinations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Prescription" asp-action="Index">Prescriptions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="MedicalRecord" asp-action="Index">Medical Records</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="MedicalFile" asp-action="Index">Medical Files</a>
                             </li>
                         }
                     </ul>
