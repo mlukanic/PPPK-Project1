@@ -1,0 +1,82 @@
+﻿@model MedicalSystemMvc.Models.PatientViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Patient</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.OIB)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.OIB)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DateOfBirth)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <h4>Medical Record</h4>
+    <hr />
+    <ul>
+        @foreach (var medicalRecord in Model.MedicalRecords)
+        {
+            <li>@medicalRecord.DiseaseName -> @medicalRecord.StartDate - @medicalRecord.EndDate</li>
+        }
+    </ul>
+</div>
+
+<div>
+    <h4>Prescriptions</h4>
+    <hr />
+    <ul>
+        @foreach (var prescription in Model.Prescriptions)
+        {
+            <li>@prescription.Medication - @prescription.Dosage</li>
+        }
+    </ul>
+</div>
+
+<div>
+    <h4>Examinations</h4>
+    <hr />
+    <ul>
+        @foreach (var examination in Model.Examinations)
+        {
+            <li>@examination.Date.ToShortDateString() - @ViewBag.ExaminationTypes[examination.Type]</li>
+        }
+    </ul>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,32 @@
+﻿@model MedicalSystemMvc.Models.PrescriptionViewModel
+
+<h2>Prescription Details</h2>
+
+<div>
+    <h4>Prescription</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Medication
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Medication
+        </dd>
+        <dt class="col-sm-2">
+            Dosage
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Dosage
+        </dd>
+        <dt class="col-sm-2">
+            PatientId
+        </dt>
+        <dd class="col-sm-10">
+            @Model.PatientId
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a> |
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>
