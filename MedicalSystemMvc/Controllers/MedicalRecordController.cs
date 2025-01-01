@@ -60,31 +60,35 @@ namespace MedicalSystemMvc.Controllers
         }
 
         // GET: MedicalRecord/Create
-        public IActionResult Create()
+        public IActionResult Create(int patientId)
         {
-            return View();
+            var model = new MedicalRecordViewModel
+            {
+                PatientId = patientId,
+                StartDate = DateTime.UtcNow // Set StartDate to DateTime.UtcNow by default
+            };
+            return View(model);
         }
 
         // POST: MedicalRecord/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(MedicalRecordViewModel model)
+        public async Task<IActionResult> Create(MedicalRecordViewModel medicalRecord)
         {
             if (ModelState.IsValid)
             {
-                var medicalRecord = new MedicalRecord
+                var record = new MedicalRecord
                 {
-                    DiseaseName = model.DiseaseName,
-                    StartDate = model.StartDate,
-                    EndDate = model.EndDate,
-                    PatientId = model.PatientId
+                    PatientId = medicalRecord.PatientId,
+                    DiseaseName = medicalRecord.DiseaseName,
+                    StartDate = medicalRecord.StartDate.ToUniversalTime(), // Convert to UTC
+                    EndDate = medicalRecord.EndDate?.ToUniversalTime() // Convert to UTC if not null
                 };
-
-                _context.Add(medicalRecord);
+                _context.Add(record);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(model);
+            return View(medicalRecord);
         }
 
         // GET: MedicalRecord/Edit/5
@@ -134,8 +138,8 @@ namespace MedicalSystemMvc.Controllers
                     }
 
                     medicalRecord.DiseaseName = model.DiseaseName;
-                    medicalRecord.StartDate = model.StartDate;
-                    medicalRecord.EndDate = model.EndDate;
+                    medicalRecord.StartDate = model.StartDate.ToUniversalTime(); // Convert to UTC
+                    medicalRecord.EndDate = model.EndDate?.ToUniversalTime(); // Convert to UTC if not null
                     medicalRecord.PatientId = model.PatientId;
 
                     _context.Update(medicalRecord);

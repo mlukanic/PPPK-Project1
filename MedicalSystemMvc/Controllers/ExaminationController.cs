@@ -48,7 +48,10 @@ namespace MedicalSystemMvc.Controllers
         // GET: Examination/Create
         public IActionResult Create(int? patientId)
         {
-            var viewModel = new ExaminationViewModel();
+            var viewModel = new ExaminationViewModel
+            {
+                Date = DateTime.UtcNow // Set Date to DateTime.UtcNow by default
+            };
             if (patientId.HasValue)
             {
                 viewModel.PatientId = patientId.Value;
