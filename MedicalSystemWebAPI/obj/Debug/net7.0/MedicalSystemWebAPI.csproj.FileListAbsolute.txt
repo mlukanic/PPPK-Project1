@@ -55,3 +55,13 @@ C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemWebAPI\bin\Debug\n
 C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemWebAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemWebAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemWebAPI\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemWebAPI\bin\Debug\net7.0\CommunityToolkit.HighPerformance.dll
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemWebAPI\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemWebAPI\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemWebAPI\bin\Debug\net7.0\Microsoft.Extensions.Logging.dll
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemWebAPI\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemWebAPI\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemWebAPI\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemWebAPI\bin\Debug\net7.0\Minio.dll
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemWebAPI\bin\Debug\net7.0\System.IO.Hashing.dll
+C:\Users\Matija\Desktop\PPPK_Task1\MedicalSystem\MedicalSystemWebAPI\bin\Debug\net7.0\System.Reactive.dll

@@ -1,16 +1,17 @@
 ﻿@model IEnumerable<MedicalSystemMvc.Models.PatientViewModel>
 
 @{
-    ViewData["Title"] = "Patient Index";
+    ViewData["Title"] = "Patients";
 }
 
-<h1>Patient Index</h1>
+<h1>Patients</h1>
 
 <form asp-action="Index" method="get">
     <div class="form-group">
         <label for="searchString">Search by Last Name or OIB</label>
         <input type="text" class="form-control" id="searchString" name="searchString" value="@ViewData["CurrentFilter"]" />
     </div>
+    <br />
     <button type="submit" class="btn btn-primary">Search</button>
 </form>
 

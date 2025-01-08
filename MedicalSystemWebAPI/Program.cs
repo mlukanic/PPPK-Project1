@@ -8,6 +8,8 @@ using MedicalSystemClassLibrary.Data;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using MedicalSystemClassLibrary.Services.Interfaces;
+using MedicalSystemClassLibrary.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +26,7 @@ builder.Services.AddScoped<IRepositoryFactory, RepositoryFactory>();
 // Register services
 builder.Services.AddScoped<PatientService>();
 
+builder.Services.AddScoped<IMinioService, MinioService>();
 
 // Add controllers
 builder.Services.AddControllers();

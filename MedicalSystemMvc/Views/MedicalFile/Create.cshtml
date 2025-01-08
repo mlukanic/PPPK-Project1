@@ -1,58 +1,57 @@
 ﻿@model MedicalFileViewModel
 
-<!-- Form for Uploading the File -->
-<form id="uploadForm" method="post" enctype="multipart/form-data" asp-controller="MedicalFile" asp-action="UploadFile">
-    <div class="form-group">
-        <div class="col-md-10">
-            <p>Upload file</p>
-            <input type="file" id="fileInput" name="files" multiple />
-        </div>
-    </div>
-</form>
+@{
+    ViewData["Title"] = "Create Medical File";
+}
 
-<!-- Form for Creating the Medical File -->
-<form id="createForm" method="post" asp-controller="MedicalFile" asp-action="Create">
+<form id="createForm" method="post" enctype="multipart/form-data" asp-controller="MedicalFile" asp-action="Create">
     <div class="form-group">
         <label asp-for="ExaminationId" class="control-label"></label>
         <input asp-for="ExaminationId" class="form-control" />
         <span asp-validation-for="ExaminationId" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <input type="hidden" asp-for="FilePath" id="filePath" />
+        <div class="col-md-10">
+            <p>Upload file</p>
+            <input type="file" id="fileInput" name="file" />
+        </div>
+    </div>
+    <div class="form-group">
+        <input type="hidden" asp-for="ObjectId" id="objectId" />
     </div>
     <div class="form-group">
         <div class="col-md-10">
-            <input type="button" value="Create" class="btn btn-primary" onclick="uploadAndCreate()" />
+            <br />
+            <input type="submit" value="Create" class="btn btn-primary" />
         </div>
     </div>
 </form>
 
 @section Scripts {
     <script>
-        function uploadAndCreate() {
-            var formData = new FormData(document.getElementById('uploadForm'));
-            fetch('/MedicalFile/UploadFile', {
-                method: 'POST',
-                body: formData
-            })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    if (data.filePaths && data.filePaths.length > 0) {
-                        document.getElementById('filePath').value = data.filePaths[0];
-                        document.getElementById('createForm').submit();
-                    } else {
-                        alert('File upload failed.');
-                    }
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    alert('File upload failed.');
+        document.getElementById('createForm').addEventListener('submit', async function (event) {
+            event.preventDefault();
+
+            const fileInput = document.getElementById('fileInput');
+            if (fileInput.files.length > 0) {
+                const formData = new FormData();
+                formData.append('file', fileInput.files[0]);
+
+                const response = await fetch('/MedicalFile/UploadFile', {
+                    method: 'POST',
+                    body: formData
                 });
-        }
+
+                if (response.ok) {
+                    const result = await response.json();
+                    document.getElementById('objectId').value = result.objectId;
+                    this.submit();
+                } else {
+                    alert('File upload failed.');
+                }
+            } else {
+                this.submit();
+            }
+        });
     </script>
 }

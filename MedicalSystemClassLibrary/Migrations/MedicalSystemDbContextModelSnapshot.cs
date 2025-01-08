@@ -61,7 +61,7 @@ namespace MedicalSystemClassLibrary.Migrations
                     b.Property<int>("ExaminationId")
                         .HasColumnType("integer");
 
-                    b.Property<string>("FilePath")
+                    b.Property<string>("ObjectId")
                         .IsRequired()
                         .HasColumnType("text");
 

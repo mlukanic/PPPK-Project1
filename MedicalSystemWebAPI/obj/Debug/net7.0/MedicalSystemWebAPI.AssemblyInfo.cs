@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MedicalSystemWebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a4b47a600021fcd433190b68d008c60154a973b6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7afdc1456fb4d2480b60f61d01e10e78de227fa")]
 [assembly: System.Reflection.AssemblyProductAttribute("MedicalSystemWebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MedicalSystemWebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

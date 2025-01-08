@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedicalSystemClassLibrary",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedicalSystemWebAPI", "MedicalSystemWebAPI\MedicalSystemWebAPI.csproj", "{BA84C883-504F-464C-93BA-A1ED1E7FFDEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicalSystemMvc", "MedicalSystemMvc\MedicalSystemMvc.csproj", "{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedicalSystemMvc", "MedicalSystemMvc\MedicalSystemMvc.csproj", "{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
