@@ -1,5 +1,37 @@
 [
   {
+    "ContainingType": "MedicalSystemMvc.Controllers.FileController",
+    "Method": "UploadFile",
+    "RelativePath": "api/files",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalSystemMvc.Controllers.FileController",
+    "Method": "GetFile",
+    "RelativePath": "api/files/{objectId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objectId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "MedicalSystemWebAPI.Controllers.HealthController",
     "Method": "CheckDatabaseHealth",
     "RelativePath": "api/Health/CheckDatabaseHealth",

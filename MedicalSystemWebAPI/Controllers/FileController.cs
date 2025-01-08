@@ -1,74 +1,64 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using MedicalSystemClassLibrary.Services.Interfaces;
+using MedicalSystemWebAPI.Dtos;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.StaticFiles;
 
 namespace MedicalSystemMvc.Controllers
 {
     [ApiController]
+    [Route("/api/files")]
     public class FileController : ControllerBase
     {
-        private async Task<string> WriteFile(IFormFile file)
+        private readonly IMinioService _minioService;
+
+        public FileController(IMinioService minioService)
         {
-            string filename = "";
-            try
-            {
-                var extension = "." + file.FileName.Split('.')[file.FileName.Split('.').Length - 1];
-                filename = DateTime.Now.Ticks.ToString() + extension;
-
-                var filepath = Path.Combine(Directory.GetCurrentDirectory(), "Resources\\Files");
-
-                if (!Directory.Exists(filepath))
-                {
-                    Directory.CreateDirectory(filepath);
-                }
-
-                var exactpath = Path.Combine(Directory.GetCurrentDirectory(), "Resources\\Files", filename);
-                using (var stream = new FileStream(exactpath, FileMode.Create))
-                {
-                    await file.CopyToAsync(stream);
-                }
-
-                return filename;
-
-            }
-            catch (Exception ex)
-            {
-            }
-            return filename;
+            _minioService = minioService;
         }
+
 
         [HttpPost]
-        [Route("UploadFile")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> UploadFile(IFormFile file, CancellationToken cancellationtoken)
+        public async Task<IActionResult> UploadFile(IFormFile file)
         {
-            try
-            {
-                var result = await WriteFile(file);
-                return Ok(result);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            // procitati file stream
+
+            var fileStream = file.OpenReadStream();
+            var fileName = file.FileName;
+            var fileContentType = file.ContentType;
+            var fileSize = file.Length;
+
+            // koristeci minio, uploadati file stream u bucket
+
+            var objectId = await _minioService.PutObject(fileStream, fileName, fileContentType, fileSize);
+
+            // here, data could be saved into relational database
+
+            return Created( // 201 Created (returns object dto and URI to newly created resource)
+                "$http://localhost:5100/api/files/{objectId}",
+                new FileResponseDto()
+                {
+                    ObjectId = objectId,
+                    ContentType = fileContentType,
+                    Path = $"http://localhost:5100/api/files/{objectId}",
+                    Size = fileSize,
+                    Name = fileName
+                });
+
         }
 
-        [HttpGet]
-        [Route("DownloadFile")]
-        public async Task<IActionResult> DownloadFile(string filename)
+
+        [HttpGet("{objectId}")]
+        public async Task<IActionResult> GetFile(string objectId)
         {
-            var filepath = Path.Combine(Directory.GetCurrentDirectory(), "Resources\\Files", filename);
 
-            var provider = new FileExtensionContentTypeProvider();
-            if (!provider.TryGetContentType(filepath, out var contenttype))
-            {
-                contenttype = "application/octet-stream";
-            }
+            var response = await _minioService.GetObject(objectId);
 
-            var bytes = await System.IO.File.ReadAllBytesAsync(filepath);
-            return File(bytes, contenttype, Path.GetFileName(filepath));
+            return File(response.Data, response.ContentType);
         }
+
+
     }
+
 
 }

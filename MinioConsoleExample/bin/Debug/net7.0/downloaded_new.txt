@@ -1,0 +1,296 @@
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using WEM.EasyEditCms.Common.UiTest;
+
+namespace WEM.EasyEditCms.Sites.Default.UiTest.Catalog
+{
+	[TestClass]
+	public class ClassForTestCase26286 : BaseUiTest
+	{
+		public static string PATH = "sokovi";
+		public static string TID_IZBOR = "tid-izbor";
+		public static string TID_ALL = "tid-all";
+        public static string TID_ACTION = "tid-action";
+        public static string PAGINATOR = "paginator";
+        public static string TID_PG_ = "tid-pg-";
+        public static string ARTICLE_BOX = "article-box";
+        public static string CATALOG_LISTING = "catalog-listing";
+        public static string CATALOG_TOTAL = "catalog-total";
+        public static string TID_NEW = "tid-new";
+        public static string ACTION_BADGE = "action-badge";
+        public static string FILTER_RANGE_MIN = "filter-range-min";
+        public static string FILTER_RANGE_MAX = "filter-range-max";
+        public static string BTN_APPLY_RANGE_FILTER = "btn-apply-range-filter";
+        public static string BTN_CLEAR_RANGE_FILTER = "btn-clear-range-filter";
+
+        public void Initialize()
+        {
+            GoToUrl($"/{PATH}");
+            AcceptCookies();
+            WaitForElementDisplayed(By.ClassName(TID_IZBOR));
+        }
+
+		public void ClickElementAndWait(string name)
+		{
+			ClickElement(By.ClassName(name));
+            WaitForAjaxRequestToComplete();
+        }
+
+        public static void ValidateCatalog(IWebElement catalog)
+        {
+            List<IWebElement> catalogItems = catalog.GetChildren().ToList();
+            List<IWebElement> articles = new List<IWebElement>();
+
+            foreach (var item in catalogItems)
+            {
+                if (item.HasClass(ARTICLE_BOX))
+                {
+                    articles.Add(item);
+                }
+                else
+                {
+                    throw new Exception($"Item doesn't have class named {ARTICLE_BOX}");
+                }
+            }
+
+            catalogItems.Reverse();
+            articles.Reverse();
+
+            Assert.AreEqual(articles.Count(), catalogItems.Count());
+
+            if (articles.Count() == catalogItems.Count())
+            {
+                Assert.AreEqual(articles.First().ToString(), catalogItems.First().ToString());
+                Assert.AreEqual(articles.Last().ToString(), catalogItems.Last().ToString());
+            }
+            else
+            {
+                throw new Exception($"Articles count does not match catalog items count. A: {articles.Count()} - I: {catalogItems.Count()}");
+            }
+        }
+
+        private void AssertCheckBoxChecked(string className)
+        {
+            bool isChecked = CheckBoxChecked(By.ClassName(className));
+            Assert.IsTrue(isChecked);
+        }
+
+        public List<IWebElement> ArticlesToList()
+        {
+            List<IWebElement> articles = new List<IWebElement>();
+            var catalog = GetElement(By.ClassName(CATALOG_LISTING));
+            foreach (var item in catalog.GetChildren())
+            {
+                if (item.HasClass(ARTICLE_BOX))
+                {
+                    articles.Add(item);
+                }
+                else
+                {
+                    throw new Exception($"Item doesn't have class named {ARTICLE_BOX}");
+                }
+                
+            }
+            return articles;       
+        }
+
+        public List<IWebElement> ArticlesToListFromLastPage()
+        {
+            List<IWebElement> articles = new List<IWebElement>();
+            var catalog = GetElement(By.ClassName(CATALOG_LISTING));
+            foreach (var item in catalog.GetChildren())
+            {
+                if (item.HasClass(ARTICLE_BOX))
+                {
+                    articles.Add(item);
+                }
+                else
+                {
+                    throw new Exception($"Item doesn't have class named {ARTICLE_BOX}");
+                }
+
+            }
+            return articles;
+        }
+
+        public int CountAllArticlesOnSinglePage()
+        {
+            int totalArticles = 1;
+            //SwitchToPage(currentPage);
+            var catalog = GetElement(By.ClassName(CATALOG_LISTING));
+            totalArticles += catalog.GetChildren().Count(item => item.HasClass(ARTICLE_BOX));
+
+            return totalArticles;
+        }
+
+        public int CountAllArticles()
+        {
+            int totalArticles = 0;
+            int currentPage = 1;
+            while (true)
+            {
+                SwitchToPage(currentPage);
+                var catalog = GetElement(By.ClassName(CATALOG_LISTING));
+                totalArticles += catalog.GetChildren().Count(item => item.HasClass(ARTICLE_BOX));
+                bool hasNextPage = IsElementDisplayed(By.ClassName(TID_PG_ + (currentPage + 1)));
+
+                if (!hasNextPage)
+                {
+                    break;
+                }
+                currentPage++;
+            }
+
+            return totalArticles;
+        }
+
+        public int CountAllPages()
+        {
+            int currentPage = 1;
+
+            try
+            {
+                while (IsElementDisplayed(By.ClassName(TID_PG_ + (currentPage + 1))))
+                {
+                    currentPage++;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return currentPage;
+        }
+
+        public void SwitchToPage(int pageNumber)
+        {
+            if (pageNumber > 0 && pageNumber <= CountAllPages())
+            {
+                ScrollIntoView(By.ClassName(PAGINATOR));
+                ClickElement(By.ClassName(TID_PG_ + pageNumber));
+                WaitForAjaxRequestToComplete();
+            }
+            else
+            {
+                throw new Exception($"Page number must be greater than 0 and lower then {CountAllPages()}. Assigned value: {pageNumber}");
+            }
+        }
+
+        public bool arePagesVisible()
+        {
+            int currentPage = 1;
+            while (currentPage <= CountAllPages())
+            {
+                if (IsElementDisplayed(By.ClassName(TID_PG_ + currentPage)))
+                {
+                    //SwitchToPage(1);
+                    return true;
+                }
+                currentPage++;
+            }
+            return false;
+        }
+
+        [TestMethod]
+		public void TestCase26286_Pagination()
+		{
+			Initialize();
+
+            AssertCheckBoxChecked(TID_ALL);
+
+            ClickElementAndWait(TID_ACTION);
+
+			AssertCheckBoxChecked(TID_ACTION);
+
+            ValidateCatalog(GetElement(By.ClassName(CATALOG_LISTING)));
+
+			ClickElementAndWait(TID_NEW);
+
+            AssertCheckBoxChecked(TID_ACTION);
+
+            AssertCheckBoxChecked(TID_NEW);
+
+            //string catalogItemsCount = GetText(By.ClassName("catalog-total"));
+            //Assert.AreEqual("Ukupno proizvoda: 11, prikazano: 1 do 10", catalogItemsCount);
+
+            string catalogItemsCountLabel = GetText(By.ClassName(CATALOG_TOTAL));
+            var listedArticles = ArticlesToList();
+
+            Assert.AreEqual($"Ukupno proizvoda: {CountAllArticlesOnSinglePage()}, prikazano: {listedArticles.IndexOf(listedArticles.First()) + 1}" +
+                $" do {listedArticles.IndexOf(listedArticles.Last()) + 1}", catalogItemsCountLabel);
+
+            //6. korak Provjeriti dal svi artikli imaju na sebi neki action-badge
+			foreach (var item in GetElement(By.ClassName(CATALOG_LISTING)).GetChildren().ToList())
+			{
+				bool isHavingBadge = item.FindElement(By.ClassName(ACTION_BADGE)) != null;
+				Assert.IsTrue(isHavingBadge);
+			}
+
+			Assert.IsTrue(arePagesVisible());
+
+            int currentPage = 1;
+            List<IWebElement> catalogItems = new List<IWebElement>();
+
+            try
+            {
+                while (currentPage <= CountAllPages())
+                {
+                    SwitchToPage(currentPage);
+                    var catalog = GetElement(By.ClassName(CATALOG_LISTING));
+                    foreach (var item in catalog.GetChildren())
+                    {
+                        if (currentPage != 1)
+                        {
+                            catalogItems.Add(item);
+                        }
+
+                    }
+                    currentPage++;
+                }
+                Assert.AreEqual(ArticlesToList().Count, catalogItems.Count);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+            string actionLabel = catalogItems.First().FindElement(By.ClassName(ACTION_BADGE)).Text;
+			Assert.AreEqual("NOVO U PONUDI", actionLabel);
+
+            ClickElementAndWait(TID_ALL);
+
+            AssertCheckBoxChecked(TID_ALL);
+
+			SetText(By.ClassName(FILTER_RANGE_MIN), "13");
+			SetText(By.ClassName(FILTER_RANGE_MAX), "16");
+
+			ClickElementAndWait(BTN_APPLY_RANGE_FILTER);
+
+            var priceRange = GetElement(By.ClassName("catalog-listing")).GetChildren();
+			Assert.AreEqual(4, priceRange.Count);
+
+			ClickElementAndWait(BTN_CLEAR_RANGE_FILTER);
+
+            Assert.IsTrue(arePagesVisible());
+
+            //TODO: REMOVE HARD CODED VALUES
+
+            string catalogItems2 = GetText(By.ClassName("catalog-total"));
+            Assert.AreEqual("Ukupno proizvoda: 14, prikazano: 11 do 14", catalogItems2);
+
+            //string catalogItemsCountLabel2 = GetText(By.ClassName(CATALOG_TOTAL));
+            //var listedArticles2 = ArticlesToList();
+            //Assert.AreEqual($"Ukupno proizvoda: {CountAllArticles()}, prikazano: {listedArticles2.IndexOf(listedArticles2.First()) + 1}" +
+            //    $" do {listedArticles2.IndexOf(listedArticles2.Last()) + 1}", catalogItemsCountLabel2);
+
+            //Assert.AreEqual($"Ukupno proizvoda: {CountAllArticles()}, prikazano: {ArticlesToList().IndexOf(ArticlesToList().First()) + 1}" +
+            //    $" do {ArticlesToList().IndexOf(ArticlesToList().Last()) + 1}", GetText(By.ClassName(CATALOG_TOTAL)));
+        }
+
+	}
+}

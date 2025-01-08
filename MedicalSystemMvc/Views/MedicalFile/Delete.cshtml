@@ -1,7 +1,7 @@
 ﻿@model MedicalFileViewModel
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Delete Medical File";
 }
 
 <h2>Delete</h2>
@@ -18,10 +18,10 @@
             @Html.DisplayFor(model => model.ExaminationId)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.RelativeFilePath)
+            @Html.DisplayNameFor(model => model.ObjectId)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.RelativeFilePath)
+            @Html.DisplayFor(model => model.ObjectId)
         </dd>
     </dl>
 

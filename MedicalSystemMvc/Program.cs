@@ -1,5 +1,7 @@
 using MedicalSystemClassLibrary.Data;
 using MedicalSystemClassLibrary.Models;
+using MedicalSystemClassLibrary.Services.Interfaces;
+using MedicalSystemClassLibrary.Services;
 using MedicalSystemMvc.Controllers;
 using MedicalSystemMvc.Mapping;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -15,8 +17,9 @@ builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddDbContext<MedicalSystemDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("Postgre")));
 
+builder.Services.AddScoped<IMinioService, MinioService>();
+
 builder.Services.AddDistributedMemoryCache();
-builder.Services.AddTransient<FileUploadController>();
 builder.Services.AddTransient<CsvExporter>();
 builder.Services.AddSession(options =>
 {

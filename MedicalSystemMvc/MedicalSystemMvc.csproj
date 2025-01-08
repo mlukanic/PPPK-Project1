@@ -14,8 +14,4 @@
     <ProjectReference Include="..\MedicalSystemClassLibrary\MedicalSystemClassLibrary.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Resources\Files\" />
-  </ItemGroup>
-
 </Project>
