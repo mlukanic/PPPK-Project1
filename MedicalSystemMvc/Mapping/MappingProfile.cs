@@ -8,10 +8,13 @@ namespace MedicalSystemMvc.Mapping
     {
         public MappingProfile()
         {
-            CreateMap<User, UserLoginViewModel>();
-            //CreateMap<Examination, ExaminationViewModel>();
-            //CreateMap<Patient, PatientViewModel>();
-            //CreateMap<MedicalFile, MedicalFileViewModel>();
+            CreateMap<User, UserLoginViewModel>().ReverseMap();
+            CreateMap<Examination, ExaminationViewModel>().ReverseMap();
+            CreateMap<Patient, PatientViewModel>().ReverseMap();
+            CreateMap<MedicalFile, MedicalFileViewModel>().ReverseMap();
+            CreateMap<Prescription, PrescriptionViewModel>().ReverseMap();
+            CreateMap<MedicalRecord, MedicalRecordViewModel>().ReverseMap();
+            CreateMap<MedicalFile, MedicalFileViewModel>().ReverseMap();
         }
     }
 }

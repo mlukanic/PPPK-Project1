@@ -19,6 +19,8 @@ builder.Services.AddDbContext<MedicalSystemDbContext>(options =>
 
 builder.Services.AddScoped<IMinioService, MinioService>();
 
+builder.Services.AddScoped<IUserService, UserService>();
+
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddTransient<CsvExporter>();
 builder.Services.AddSession(options =>

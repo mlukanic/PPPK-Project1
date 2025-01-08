@@ -1,15 +1,124 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BA84C883-504F-464C-93BA-A1ED1E7FFDEE}|MedicalSystemWebAPI\\MedicalSystemWebAPI.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemwebapi\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA84C883-504F-464C-93BA-A1ED1E7FFDEE}|MedicalSystemWebAPI\\MedicalSystemWebAPI.csproj|solutionrelative:medicalsystemwebapi\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA84C883-504F-464C-93BA-A1ED1E7FFDEE}|MedicalSystemWebAPI\\MedicalSystemWebAPI.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemwebapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BA84C883-504F-464C-93BA-A1ED1E7FFDEE}|MedicalSystemWebAPI\\MedicalSystemWebAPI.csproj|solutionrelative:medicalsystemwebapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemmvc\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|solutionrelative:medicalsystemmvc\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|solutionrelative:medicalsystemmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|solutionrelative:medicalsystemmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|solutionrelative:medicalsystemmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemmvc\\views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|solutionrelative:medicalsystemmvc\\views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemmvc\\views\\admin\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|solutionrelative:medicalsystemmvc\\views\\admin\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemmvc\\views\\admin\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|solutionrelative:medicalsystemmvc\\views\\admin\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemmvc\\views\\admin\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|solutionrelative:medicalsystemmvc\\views\\admin\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemmvc\\views\\admin\\confirmcreation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|solutionrelative:medicalsystemmvc\\views\\admin\\confirmcreation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemmvc\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|solutionrelative:medicalsystemmvc\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemmvc\\views\\admin\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|solutionrelative:medicalsystemmvc\\views\\admin\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemmvc\\models\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|solutionrelative:medicalsystemmvc\\models\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemmvc\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|solutionrelative:medicalsystemmvc\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemmvc\\views\\user\\confirmregistration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|solutionrelative:medicalsystemmvc\\views\\user\\confirmregistration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemmvc\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|solutionrelative:medicalsystemmvc\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemmvc\\views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|solutionrelative:medicalsystemmvc\\views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemmvc\\models\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|solutionrelative:medicalsystemmvc\\models\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemmvc\\views\\patient\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|solutionrelative:medicalsystemmvc\\views\\patient\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemclasslibrary\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|solutionrelative:medicalsystemclasslibrary\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemclasslibrary\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|solutionrelative:medicalsystemclasslibrary\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA84C883-504F-464C-93BA-A1ED1E7FFDEE}|MedicalSystemWebAPI\\MedicalSystemWebAPI.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemwebapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA84C883-504F-464C-93BA-A1ED1E7FFDEE}|MedicalSystemWebAPI\\MedicalSystemWebAPI.csproj|solutionrelative:medicalsystemwebapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemclasslibrary\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|solutionrelative:medicalsystemclasslibrary\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemclasslibrary\\data\\medicalsystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|solutionrelative:medicalsystemclasslibrary\\data\\medicalsystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemclasslibrary\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{393A63C1-B56F-4C4B-8493-77E0511AE03F}|MedicalSystemClassLibrary\\MedicalSystemClassLibrary.csproj|solutionrelative:medicalsystemclasslibrary\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|c:\\users\\matija\\desktop\\pppk_task1\\medicalsystem\\medicalsystemmvc\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB0B2424-D83E-446A-ABE6-5B8B8C290F92}|MedicalSystemMvc\\MedicalSystemMvc.csproj|solutionrelative:medicalsystemmvc\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 184,
-          "SelectedChildIndex": -1,
+          "DockedWidth": 287,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -17,11 +126,362 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemWebAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "MedicalSystemWebAPI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemWebAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "MedicalSystemWebAPI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-08T17:27:36.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FileController.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemWebAPI\\Controllers\\FileController.cs",
+              "RelativeDocumentMoniker": "MedicalSystemWebAPI\\Controllers\\FileController.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemWebAPI\\Controllers\\FileController.cs",
+              "RelativeToolTip": "MedicalSystemWebAPI\\Controllers\\FileController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCAAAABqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T17:27:32.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "MedicalSystemMvc\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "MedicalSystemMvc\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T17:27:07.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "MedicalSystemMvc\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "MedicalSystemMvc\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T17:27:06.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "MedicalSystemMvc\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "MedicalSystemMvc\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T14:58:04.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ChangePasswordViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Models\\ChangePasswordViewModel.cs",
+              "RelativeDocumentMoniker": "MedicalSystemMvc\\Models\\ChangePasswordViewModel.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Models\\ChangePasswordViewModel.cs",
+              "RelativeToolTip": "MedicalSystemMvc\\Models\\ChangePasswordViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T15:11:32.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ChangePassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Views\\Admin\\ChangePassword.cshtml",
+              "RelativeDocumentMoniker": "MedicalSystemMvc\\Views\\Admin\\ChangePassword.cshtml",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Views\\Admin\\ChangePassword.cshtml",
+              "RelativeToolTip": "MedicalSystemMvc\\Views\\Admin\\ChangePassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T15:10:26.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ConfirmCreation.cshtml",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Views\\Admin\\ConfirmCreation.cshtml",
+              "RelativeDocumentMoniker": "MedicalSystemMvc\\Views\\Admin\\ConfirmCreation.cshtml",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Views\\Admin\\ConfirmCreation.cshtml",
+              "RelativeToolTip": "MedicalSystemMvc\\Views\\Admin\\ConfirmCreation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T16:13:36.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Views\\Admin\\Create.cshtml",
+              "RelativeDocumentMoniker": "MedicalSystemMvc\\Views\\Admin\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Views\\Admin\\Create.cshtml",
+              "RelativeToolTip": "MedicalSystemMvc\\Views\\Admin\\Create.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T14:58:11.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Views\\Admin\\Delete.cshtml",
+              "RelativeDocumentMoniker": "MedicalSystemMvc\\Views\\Admin\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Views\\Admin\\Delete.cshtml",
+              "RelativeToolTip": "MedicalSystemMvc\\Views\\Admin\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T14:58:25.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Views\\Admin\\Details.cshtml",
+              "RelativeDocumentMoniker": "MedicalSystemMvc\\Views\\Admin\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Views\\Admin\\Details.cshtml",
+              "RelativeToolTip": "MedicalSystemMvc\\Views\\Admin\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T14:58:31.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Views\\Admin\\Edit.cshtml",
+              "RelativeDocumentMoniker": "MedicalSystemMvc\\Views\\Admin\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Views\\Admin\\Edit.cshtml",
+              "RelativeToolTip": "MedicalSystemMvc\\Views\\Admin\\Edit.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T14:58:20.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Program.cs",
+              "RelativeDocumentMoniker": "MedicalSystemMvc\\Program.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Program.cs",
+              "RelativeToolTip": "MedicalSystemMvc\\Program.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T15:05:20.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MedicalSystemMvc\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MedicalSystemMvc\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAgwFkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T15:03:15.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "MedicalSystemMvc\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "MedicalSystemMvc\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAA1wLoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T14:58:42.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ConfirmRegistration.cshtml",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Views\\User\\ConfirmRegistration.cshtml",
+              "RelativeDocumentMoniker": "MedicalSystemMvc\\Views\\User\\ConfirmRegistration.cshtml",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Views\\User\\ConfirmRegistration.cshtml",
+              "RelativeToolTip": "MedicalSystemMvc\\Views\\User\\ConfirmRegistration.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T16:13:20.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Views\\User\\Register.cshtml",
+              "RelativeDocumentMoniker": "MedicalSystemMvc\\Views\\User\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Views\\User\\Register.cshtml",
+              "RelativeToolTip": "MedicalSystemMvc\\Views\\User\\Register.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAwCcAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T14:48:43.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Models\\User.cs",
+              "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Models\\User.cs",
+              "RelativeToolTip": "MedicalSystemClassLibrary\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T15:44:28.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Models\\Role.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Models\\Role.cs",
+              "RelativeToolTip": "MedicalSystemClassLibrary\\Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T15:43:14.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Views\\Patient\\Create.cshtml",
+              "RelativeDocumentMoniker": "MedicalSystemMvc\\Views\\Patient\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Views\\Patient\\Create.cshtml",
+              "RelativeToolTip": "MedicalSystemMvc\\Views\\Patient\\Create.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T14:55:39.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Models\\UserViewModel.cs",
+              "RelativeDocumentMoniker": "MedicalSystemMvc\\Models\\UserViewModel.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Models\\UserViewModel.cs",
+              "RelativeToolTip": "MedicalSystemMvc\\Models\\UserViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T14:42:25.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "MedicalSystemMvc\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Controllers\\UserController.cs",
+              "RelativeToolTip": "MedicalSystemMvc\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAywG8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T14:48:58.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemWebAPI\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "MedicalSystemWebAPI\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemWebAPI\\Controllers\\UserController.cs",
+              "RelativeToolTip": "MedicalSystemWebAPI\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAhwJkAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T15:43:50.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Services\\UserService.cs",
+              "RelativeToolTip": "MedicalSystemClassLibrary\\Services\\UserService.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowFAAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T15:06:24.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "MedicalSystemDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Data\\MedicalSystemDbContext.cs",
+              "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Data\\MedicalSystemDbContext.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Data\\MedicalSystemDbContext.cs",
+              "RelativeToolTip": "MedicalSystemClassLibrary\\Data\\MedicalSystemDbContext.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T15:43:21.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Services\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "MedicalSystemClassLibrary\\Services\\Interfaces\\IUserService.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemClassLibrary\\Services\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "MedicalSystemClassLibrary\\Services\\Interfaces\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T15:01:27.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Mapping\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "MedicalSystemMvc\\Mapping\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\Matija\\Desktop\\PPPK_Task1\\MedicalSystem\\MedicalSystemMvc\\Mapping\\MappingProfile.cs",
+              "RelativeToolTip": "MedicalSystemMvc\\Mapping\\MappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T14:50:16.125Z",
+              "EditorCaption": ""
             }
           ]
         }
